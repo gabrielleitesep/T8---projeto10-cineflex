@@ -26,7 +26,11 @@ export default function Filmes() {
     }, []);
 
     return (
+
         <div className="listafilmes">
+            <div className="selecione-filme">
+                <h1>Selecione o filme</h1>
+            </div>
             {catalogo.map((c, index) => (
                 <Filme key={index} img={c.posterURL} id={c.id} />
             ))}
